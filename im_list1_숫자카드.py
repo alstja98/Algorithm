@@ -5,7 +5,7 @@
 가장 많은 카드에 적힌 숫자와 카드가 몇 장인지 출력하는 프로그램을 만드시오. 카드 장수가 같을 때는 적힌 숫자가 큰 쪽을 출력한다.
 
 [입력]
- 첫 줄에 테스트 케이스 개수 T가 주어진다.  ( 1 ≤ T ≤ 50 )
+첫 줄에 테스트 케이스 개수 T가 주어진다.  ( 1 ≤ T ≤ 50 )
 다음 줄부터 테스트케이스의 첫 줄에 카드 장수 N이 주어진다. ( 5 ≤ N ≤ 100 )
 다음 줄에 N개의 숫자 ai가 여백없이 주어진다. (0으로 시작할 수도 있다.)  ( 0 ≤ ai ≤ 9 ) 
 
@@ -22,7 +22,7 @@ for test_case in range(1, T + 1):
     
     non_dup_numbers = list(set(numbers)) 
     for i in non_dup_numbers:
-        count = numbers.count(i)  # point 2. 현재 숫자가 리스트에 몇 번 등장하는지 계산
+        count = numbers.count(i)  # point 2. 일치하는 값의 개수 파악 == count()
         if max_count < count:
             max_count = count
             max_number = i
