@@ -1,12 +1,12 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 24444                             :+:    :+:      :+:     #
+#    Problem Number: 24445                             :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: alstja98 <boj.kr/u/alstja98>                +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/24444                          #+#        #+#      #+#     #
-#    Solved: 2025/01/12 16:45:39 by alstja98      ###          ###   ##.kr     #
+#    https://boj.kr/24445                          #+#        #+#      #+#     #
+#    Solved: 2025/01/12 17:02:13 by alstja98      ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
 import sys
@@ -20,7 +20,7 @@ for _ in range(M):
     graph[n2].append(n1)
     
 for row in graph:
-    row.sort()
+    row.sort(reverse=True)
 
 visited = [False for _ in range(N+1)]
 visited[R] = True
